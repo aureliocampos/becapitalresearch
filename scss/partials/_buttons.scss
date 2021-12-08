@@ -1,0 +1,54 @@
+.button {
+  display: block;
+  width: max-content;
+  height: auto;
+  font: 400 1em $secondary-font;
+  text-transform: uppercase;
+  padding: 0.75em 1.5em;
+  border-radius: 0.5rem; 
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+.button__primary {
+  font: 900 0.875em $secondary-font;
+  color: $white;
+  line-height: 18px;
+  letter-spacing: 0.165em;
+  background: $gradient-brand;
+  box-shadow: 0px 4.10758px 10.9536px rgba(232, 23, 93, 0.51);
+  border-radius: 0.875em;
+}
+
+.button__primary--with-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+
+  font: 900 0.875em $secondary-font;
+  color: $white;
+  line-height: 18px;
+  letter-spacing: 0.165em;
+  background-color: $brand;
+  span {
+    margin-left: 2rem;
+  }
+}
+
+.button__secondary {
+  font: 700 1em $secondary-font;
+  color: $brand;
+  padding: 0.5em 1em;
+  background-color: $white;
+  border: 1px solid $brand;
+  filter: drop-shadow(0px 0px 1.47649px #F21B8E);
+  border-radius: 4.42948px;
+}
+.button__secondary--gray {
+  font: 700 1em $secondary-font;
+  color: $gray-darkest;
+  padding: 0.5em 1em;
+  background-color: $white;
+  border: 1px solid $gray-darkest;
+  border-radius: 0.625rem;
+}

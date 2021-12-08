@@ -10,25 +10,7 @@
   outline: none;
   border: none;
 }
-.button__primary {
-  font: 900 0.875em $secondary-font;
-  color: $white;
-  line-height: 18px;
-  letter-spacing: 0.165em;
-  background: $gradient-brand;
-  box-shadow: 0px 4.10758px 10.9536px rgba(232, 23, 93, 0.51);
-  border-radius: 0.875em;
-}
 
-.button__secondary {
-  font: 700 1em $secondary-font;
-  color: $brand;
-  padding: 0.5em 1em;
-  background-color: $white;
-  border: 1px solid $brand;
-  filter: drop-shadow(0px 0px 1.47649px #F21B8E);
-  border-radius: 4.42948px;
-}
 .button__secondary--gray {
   font: 700 1em $secondary-font;
   color: $gray-darkest;

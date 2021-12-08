@@ -1,8 +1,11 @@
 
 import style from "./index.module.scss";
+import SectionNewsletter from "../FixedNewsletter";
 
 export default function Footer() {
   return(
+    <>
+    <SectionNewsletter />
     <footer className={style.footer}>
       <div className={style.footer__container}>
         <h2 className={style.footer__title}>Disclaimer</h2>
@@ -14,5 +17,6 @@ export default function Footer() {
         </div>
       </div>
     </footer>
+    </>
   )
 }

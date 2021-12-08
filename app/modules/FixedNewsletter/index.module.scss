@@ -1,0 +1,89 @@
+.sectionNewsletter {
+  padding: 8em 2em 13.75em 2em;
+  background-color: $darkest;
+  .section__container {
+    @include tablet {
+      display: flex;
+      justify-content: space-between;
+      max-width: 1114px;
+      margin: 0 auto;
+    }
+  }
+  .newsletter__form {
+    @include tablet {
+      width: 428px;
+    }
+    .form__title {
+      font: 300 1.625em $primary-font;
+      color: $white;
+      line-height: 40px;
+      letter-spacing: 0.015em;
+      @include notebook {
+        font-size: 2.25em;
+        line-height: 3.5rem;
+      }
+      strong {
+        font-style: italic;
+        font-weight: 500;
+        color: $brand;
+      }
+    }
+  }
+  .newsletter__social {
+    margin-top: 5.25em;
+    @include tablet {
+      width: 456px;
+      margin-top: 0;
+    }
+    .social__title {
+      font: 700 1.25em $primary-font;
+      text-align: center;
+      color: $white;
+      line-height: 33px;
+      letter-spacing: 0.015em;
+      @include notebook {
+        font-size: 1.875em;
+        line-height: 2.875rem;
+      }
+    }
+    .social__items {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin: 2.5em 0 5em 0;
+      @include tablet {
+        margin-bottom: 3.25em;
+      }
+      .social__item {
+        .social__link {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 34px;
+          height: 34px;
+          border-radius: 10px;
+
+          color: $black;
+          background-color: $brand-dark;
+          transition: all 0.2s ease-in-out;
+          @include notebook {
+            width: 42px;
+            height: 42px;
+            span {
+              font-size: 1.25em;
+            }
+          }
+          &:hover {
+            color: $white;
+            background-color: $brand;
+          }
+        }
+      }
+    }
+  }
+  .companyLogo {
+    width: 177px;
+    height: auto;
+    margin: 0 auto;
+  }
+}

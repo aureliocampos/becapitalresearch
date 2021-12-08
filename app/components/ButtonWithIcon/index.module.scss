@@ -1,0 +1,15 @@
+.button__primaryWithIcon {
+  @extend .button;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+
+  font: 900 0.875em $secondary-font;
+  color: $white;
+  line-height: 18px;
+  letter-spacing: 0.165em;
+  background-color: $brand;
+  span {
+    margin-left: 2rem;
+  }
+}

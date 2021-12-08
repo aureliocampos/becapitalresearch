@@ -116,7 +116,7 @@
   }
 }
 
-.mobile-menu {
+.mobileMenu {
   width: 30px;
   height: 30px;
   transition: all 0.3s ease-in-out;
@@ -146,7 +146,7 @@
     }
   }
 }
-.mobile-menu.active {
+.mobileMenu.active {
   position: initial;
   z-index: 2;
   transition: all 0.3s ease-in-out;

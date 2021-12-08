@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Image from "next/image";
 import Link from "next/link";
 import logoResearch from "../../../media/images/logo-research.svg";
-
+import ButtonWithIcon from '../../components/ButtonWithIcon';
 import style from "./index.module.scss";
 
 export default function Header() {
@@ -11,14 +11,12 @@ export default function Header() {
 
   const toggleClass = () => {
     setActive(!isActive);
-    document.querySelector('.header').classList.toggle('active');
+    
   };
 
   return (
     <>
     <header className={style.header}>
-
-      <h1 className={style.h1}>Home</h1>
 
       <div className={style.header__content}>
         <a href="#" className={style.header__logo} aria-label="Link para o Home do Becapital Research">
@@ -31,7 +29,7 @@ export default function Header() {
             />
         </a>
         <button 
-          className='mobile-menu' 
+          className={style.mobileMenu} 
           onClick={toggleClass} 
           onKeyDown={toggleClass}
           aria-label="Botão menu responsivo"
@@ -40,9 +38,9 @@ export default function Header() {
           <span />
           <span />
         </button>
-        <div className={isActive ? 'header__menu active': 'header__menu'}>
+        <div className={isActive ? `${style.header__menu} ${style.active}`: `${style.header__menu}`}>
           <button 
-            className={isActive ? 'mobile-menu active': 'mobile-menu'}
+            className={isActive ? `${style.mobileMenu} ${style.active}`: `${style.mobileMenu}`}
             onClick={toggleClass} 
             onKeyDown={toggleClass}
             aria-label="Botão menu responsivo"
@@ -51,19 +49,16 @@ export default function Header() {
             <span />
             <span />
           </button>
-          <nav className="header__menu_nav">
-            <ul className="header__menu_items">
-              <li className="header__menu_item">
+          <nav className={style.header__menu_nav}>
+            <ul className={style.header__menu_items}>
+              <li className={style.header__menu_item}>
                 <Link href="/analistas/">Analistas</Link>
               </li>
-              <li className="header__menu_item">
+              <li className={style.header__menu_item}>
                 <Link href="/blog/">Blog</Link>
               </li>
-              <li className="header__menu_item">
-                <a href="#telegram" className="button button__primary--with-icon">
-                  Telegram
-                  <span className="icon-youtube"></span>
-                </a>
+              <li className={style.header__menu_item}>
+                <ButtonWithIcon link="#irpaaratele" text="Telegram" icon="icon-youtube"/>
               </li>
             </ul>
           </nav>

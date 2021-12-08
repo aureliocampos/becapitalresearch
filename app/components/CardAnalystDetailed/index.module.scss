@@ -1,0 +1,49 @@
+/* Card do Analista */
+.analysts {
+  &__item {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 2.25em 0 2.5em 0;
+    padding: 0 1em;
+    @include tablet {
+      justify-content: space-between;
+      max-width: 740px;
+      margin: 4.5em auto 5em auto;
+    }
+    @include notebook {
+      max-width: 1274px;
+      gap: 36px;
+    }
+  }
+  &__figure {
+    width: 160px;
+    height: auto;
+    @include tablet {
+      width: 40%;
+    }
+    img {
+      border-radius: 21.65px;
+    }
+  }
+  &__excerpt {
+    font: 400 0.75em $secondary-font;
+    color: $black;
+    line-height: 149.19%;
+    text-align: justify;
+    margin: 1.25rem 0 1.5rem 0;
+    @include notebook {
+      font-size: 1em;
+      margin: 2em 0 3em 0;
+    }
+  }
+  &__description {
+    @include tablet {
+      width: 55%;
+    }
+  }
+  &__button {
+    width: max-content;
+    margin: 0 auto;
+  }
+}

@@ -9,3 +9,13 @@
   filter: drop-shadow(0px 0px 1.47649px #F21B8E);
   border-radius: 4.42948px;
 }
+
+.button__secondary_gray {
+  @extend .button;
+  font: 700 1em $secondary-font;
+  color: $gray-darkest;
+  padding: 0.5em 1em;
+  background-color: $white;
+  border: 1px solid $gray-darkest;
+  border-radius: 0.625rem;
+}

@@ -1,0 +1,30 @@
+.section__investorProfile {
+  padding: 1.25em 1.5em 3.125em 1.5em;
+  @include tablet {
+    padding: 3.25em 0 8em 0;
+  }
+  .section__title {
+    font: bold 1.4em $primary-font;
+    color: $darkest;
+    line-height: 149.19%;
+    text-align: center;
+    margin-bottom: 1.75rem;
+    @include tablet {
+      font-size: 2.875em;
+      margin-bottom: 3.875rem;
+    }
+  }
+  .investorProfile {
+    &__items {
+      @include tablet {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      @include notebook {
+        max-width: 1274px;
+        margin: 0 auto;
+      }
+    }
+  }
+}

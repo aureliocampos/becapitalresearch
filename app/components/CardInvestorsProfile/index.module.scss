@@ -1,0 +1,70 @@
+.investorProfile {
+  &__item {
+    position: relative;
+    padding: 1em 1em 0 1em;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    box-sizing: border-box;
+    border-radius: 26px;
+    text-align: center;
+    margin-bottom: 3rem;
+    @include tablet {
+      width: 30%;
+      height: 284px;
+    }
+    @include notebook {
+      width: 400px;
+      height: 400px;
+      padding: 2em;
+      margin: 0;
+      transition: all 0.3s ease-in-out;
+      &:hover {
+        box-shadow: 0px 4px 32px rgba(0, 0, 0, 0.15);
+      }
+    }
+    .button__secondary {
+      position: absolute;
+      left: 30%;
+      bottom: -20px;
+      @include tablet {
+        left: 22%;
+      }
+      @include tablet-landscape {
+        position: initial;
+        margin: 2em auto 0 auto;
+      }
+    }
+  }
+  &__icon {
+    font-size: 3.5em; 
+    @include notebook {
+      font-size: 5em;
+    }
+  }
+  &__title {
+    font: 300 1.25em $primary-font;
+    color: $darkest;
+    line-height: 30px;
+    text-transform: uppercase;
+    margin: 0.5rem 0;
+    @include notebook {
+      font-size: 2em;
+      margin: 0.5em 0 0.7em 0;
+    }
+  }
+  &__text {
+    font: 400 0.75em $secondary-font;
+    color: $black;
+    line-height: 149.19%;
+    @include notebook {
+      font-size: 0.9em;
+      height: 85px;
+    }
+  }
+  &__button{
+    margin: 1.5em auto 0 auto;
+    width: max-content;
+    position: relative;
+    top: 11px;
+  }
+}
+  

@@ -1,0 +1,53 @@
+.analysts {
+  &__info {
+    margin-left: 1em;
+  }
+  &__info[data-media="mobile"] {
+    @include tablet {
+      display: none;
+    }
+  }
+  &__info[data-media="desktop"] {
+    display: none;
+    @include tablet {
+      display: flex;
+      align-items: center;
+      gap: 2.5em;
+      margin: 0;
+    }
+  }
+  &__social_items {
+    display: flex;
+    gap: 0.75em;
+    margin-top: 1em;
+    @include tablet {
+      margin: 0;
+    }
+    .analysts__social_item {
+      .analysts__social_link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 0.8em;
+        color: $brand;
+        padding: 0.5rem;
+        border: 1px solid #CCCCCC;
+        border-radius: 0.5rem;
+        @include notebook {
+          font-size: 1em;
+        }
+      }
+    }
+  }
+  &__name {
+    font: bold 1.125em $primary-font;
+    color: $darkest;
+    line-height: 34px;
+    @include tablet {
+      font-size: 1.5em;
+    }
+    @include tablet {
+      font-size: 1.75em;
+    }
+  }
+}

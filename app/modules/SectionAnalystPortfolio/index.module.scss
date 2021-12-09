@@ -1,0 +1,70 @@
+
+.analystFeatured__open {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 280px;
+  height: auto;
+  margin: 0 auto 1.5em auto;
+  @include notebook {
+    width: 960px;
+  }
+  hr {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid $gray-light;
+  }
+  .icon-arrow-bottom {
+    position: absolute;
+    background-color: $white;
+    color: $gray-darkest;
+  }
+  .button {
+    position: absolute;
+    top: -10px;
+  }
+}
+.analystFeatured__title {
+  font: 300 1.25em $primary-font;
+  color: $darkest;
+  line-height: 29px;
+  text-align: center;
+  letter-spacing: 0.085em;
+  text-transform: uppercase;
+  @include notebook {
+    font-size: 2.5em;
+  }
+}
+
+/* Seção de destaques do Analista - Carteiras */
+.analystFeatured__wallet {
+  .analystFeatured__items {
+    @include tablet {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5em;
+      margin-top: 2em;
+    }
+    @include notebook {
+      margin-top: 4em;
+    }
+  }
+}
+
+/* Seção de destaques do Analista - Blog Posts */
+.analystFeatured__blog {
+  margin: 52px 0;
+  padding: 0 .875em;
+  .analystFeatured__items {
+    @include tablet {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2rem;
+      margin: 2.5em 0 4em 0;
+    }
+    @include notebook {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}

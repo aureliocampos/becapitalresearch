@@ -20,6 +20,7 @@ export default function SectionAnalystPortfolios({ items }) {
                 altText={featuredImage.node.altText} />
             );
           }) }
+          
       </div>
     </section>
   )

@@ -45,5 +45,24 @@
   &__button {
     width: max-content;
     margin: 0 auto;
+    @include tablet {
+      margin: 0;
+    }
   }
+}
+
+
+/* Seção de destaques do Analista */
+.analystFeatured__content {
+  display: none;
+  max-width: 1274px;
+  height: auto;
+  margin: 2em auto;
+}
+.analystFeatured__content.active {
+  display: block;
+}
+.analystFeatured__open_button {
+  width: max-content;
+  margin: 0 auto;
 }

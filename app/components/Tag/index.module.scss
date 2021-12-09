@@ -1,0 +1,26 @@
+
+/* Style Tag */
+.postTag__items {
+  margin-top: 1.5em;
+  display: flex;
+  .postTag__item {
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: max-content;
+    font: 400 0.7em $primary-font;
+    color: $brand;
+    padding: 0.625em 0.5em;
+    background-color: $brand-light;
+    border-radius: 0.375em;
+    margin-right: 0.5rem;
+    .postTag__circle {
+      display: block;
+      width: 0.5rem;
+      height: 0.5rem;
+      background-color: $white;
+      border-radius: 100%;
+      margin-right: 0.5rem;
+    }
+  }
+}

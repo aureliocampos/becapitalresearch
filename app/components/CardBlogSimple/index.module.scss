@@ -1,0 +1,48 @@
+/* Seção de destaques do Analista - Blog Posts */
+.cardBlogSimple__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1.25em 0;
+  @include notebook {
+    padding: 1em;
+    background: $lightest;
+    border-radius: 1.875em;
+    margin: 0;
+  }
+  .cardBlogSimple__figure {
+    width: 33%;
+    @include notebook {
+      width: 35%;
+    }
+    img {
+      border-radius:0.875em;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+  .cardBlogSimple__description {
+    width: 60%;
+    font-size: 12px;
+    @include notebook {
+      font-size: 15px;
+    }
+    &_title {
+      font: bold 1.125em $primary-font;
+      color: $darkest;
+      line-height: 120%;
+    }
+    &_text {
+      font: 400 0.75em $primary-font;
+      color: $darkest;
+      line-height: 150%;
+      margin-top: 0.875em;
+    }
+  }
+  .blog-tag__items {
+    display: none;
+    @include tablet {
+      display: block;
+    }
+  }
+}

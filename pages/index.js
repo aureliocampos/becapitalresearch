@@ -6,6 +6,7 @@ export default function Hello() {
   return(
     <Layout>
       <SectionInvestorProfile/>
+
     </Layout>
   )
 }

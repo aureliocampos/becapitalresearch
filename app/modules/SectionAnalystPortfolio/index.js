@@ -1,7 +1,5 @@
 import CardBlogSimple from "../../components/CardBlogSimple";
 import CardWallet from "../../components/CardWallet";
-import ButtonSecondary from "../../components/ButtonSecondary";
-import { Children } from "react";
 import style from "./index.module.scss"
 
 export default function SectionAnalystPorfolio({children}) {
@@ -22,17 +20,12 @@ export default function SectionAnalystPorfolio({children}) {
         <h2 className={style.analystFeatured__title}>Carteiras Assinadas</h2>
         <div className={style.analystFeatured__items}>
           <CardWallet walletInformation={wallet} />
-          <CardWallet walletInformation={wallet} />
-          <CardWallet walletInformation={wallet} />
-          <CardWallet walletInformation={wallet} />
           
         </div>
       </aside>
       <aside className={style.analystFeatured__blog}>
         <h2 className={style.analystFeatured__title}>Meus Artigos</h2>
         <div className={style.analystFeatured__items}>
-          <CardBlogSimple />
-          <CardBlogSimple />
           <CardBlogSimple />
         </div>
       </aside>

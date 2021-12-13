@@ -19,15 +19,17 @@ export default function Header() {
     <header className={style.header}>
 
       <div className={style.header__content}>
-        <a href="#" className={style.header__logo} aria-label="Link para o Home do Becapital Research">
-          <Image 
-            src={logoResearch} 
-            alt="Logo Becapital Research" 
-            layout="responsive"
-            width="160"
-            height="40"
-            />
-        </a>
+        <Link href="/" passHref>
+          <a className={style.header__logo} aria-label="Link para o Home do Becapital Research">
+            <Image 
+              src={logoResearch} 
+              alt="Logo Becapital Research" 
+              layout="responsive"
+              width="160"
+              height="40"
+              />
+          </a>
+        </Link>
         <button 
           className={style.mobileMenu} 
           onClick={toggleClass} 

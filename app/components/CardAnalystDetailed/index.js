@@ -7,6 +7,7 @@ import NameSocialMedia from "../NameSocialMedia";
 import SectionAnalystPorfolio from "../../modules/SectionAnalystPortfolio";
 
 export default function CardAnalyst({
+  analistaId,
   name,
   excerpt,
   image,
@@ -28,6 +29,7 @@ export default function CardAnalyst({
           width={411}
           height={292}
           layout="responsive"
+          priority
         />
       </figure>
       <NameSocialMedia

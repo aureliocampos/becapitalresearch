@@ -1,0 +1,36 @@
+.slideProducts__section {
+  padding-bottom: 2em;
+  .slideProducts__container {
+    .slideProducts__title {
+      font: bold 1.125em $primary-font;
+      line-height: 149.19%;
+      color: $darkest;
+      text-align: center;
+      margin-bottom: 34px;
+    }
+    .slideProducts__subtitle {
+      display: none;
+    }
+  }
+}
+@include tablet {
+  .slideProducts__section {
+    .slideProducts__container {
+      .slideProducts__swiper {
+        max-width: 924px;
+      }
+      .slideProducts__title {
+        font-size: 36px;
+        margin-bottom: 12px;
+      }
+      .slideProducts__subtitle {
+        display: block;
+        font: 400 1.5em $primary-font;
+        line-height: 149.19%;
+        color: $darkest;
+        text-align: center;
+        margin-bottom: 58px;
+      }
+    }
+  }
+}

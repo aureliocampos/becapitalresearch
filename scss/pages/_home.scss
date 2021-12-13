@@ -1,0 +1,18 @@
+.section__about {
+  .section__container {
+    padding: 2em 1em;
+    .section__title {
+      font: bold 1.4em $primary-font;
+      line-height: 149.19%;
+      text-align: center;
+      color: $darkest;
+    }
+    .section__text {
+      font: 400 0.75em $secondary-font;
+      line-height: 174.6%;
+      text-align: justify;
+      color: $darkest;
+      margin-top: 1rem;
+    }
+  }
+}

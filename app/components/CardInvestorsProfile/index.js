@@ -14,7 +14,9 @@ export default function CardInverstorProfile({
       <h2 className={style.investorProfile__title}>{title}</h2>
       <p className={style.investorProfile__text}>{text}</p>
       <div className={style.investorProfile__button}>
-        <ButtonSecondary link={link} text="Saiba mais"/>
+        <ButtonSecondary link={link}>
+          Saiba mais
+        </ButtonSecondary>
       </div>
     </aside>
   )

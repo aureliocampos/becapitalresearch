@@ -1,0 +1,59 @@
+.cardProduct__article {
+  max-width: 171px;
+  height: 274px;
+  background: #FFFFFF;
+  border: 0.543213px solid rgba(0, 0, 0, 0.15);
+  box-sizing: border-box;
+  border-radius: 24.4446px;
+  padding: 1em;
+  margin: 0 auto;
+  .cardProduct__figure {
+    width: 40%;
+    margin: 0 auto;
+  }
+  .cardProduct__title {
+    font: bold 0.75em $primary-font;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: $darkest;
+    margin-top: 1em;
+  }
+  .cardProduct__text {
+    font: 400 0.65em $secondary-font;
+    line-height: 149.19%;
+    text-align: center;
+    color: $darkest;
+    margin-top: 1em;
+  }
+  .cardProduct__button {
+    font-size: 0.65em;
+    width: max-content;
+    margin: 1em auto 0 auto;
+  }
+}
+
+@include tablet {
+  .cardProduct__article {
+    max-width: 247px;
+    height: 374px;
+    background: #FFFFFF;
+    border: 0.781665px solid rgba(0, 0, 0, 0.15);
+    box-sizing: border-box;
+    border-radius: 35.1749px;
+    padding: 1.5em;
+    .cardProduct__figure {
+      width: 50%;
+      height: auto;
+      margin: 0 auto;
+    }
+    .cardProduct__text {
+      margin-top: 1.5em;
+    }
+    .cardProduct__button {
+      font-size: 0.875em;
+      width: max-content;
+      margin: 1.5em auto 0 auto;
+    }
+  }
+}

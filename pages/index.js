@@ -1,10 +1,13 @@
-import React from "react";  
+import React from "react";
+import Image from "next/image";
+
 import Layout from "../app/Layout";
 import BannerWithSlide from "../app/modules/BannerWithSlide";
 import SectionInvestorProfile from "../app/modules/SectionInvestorsProfile"
 import SectionSlideProducts from "../app/modules/SectionSlideProducts";
-import BannerHomeImage from "../media/images/banner-home.png";
+import BannerHomeImage from "../media/images/banner-swing-trade.jpg";
 import swingTrade from "../media/images/carteira-mensal.png"
+import iconListCheck from "../media/images/icon-list-check.png";
 
 export default function Index() {
 
@@ -52,8 +55,34 @@ export default function Index() {
       <BannerWithSlide slideImages={bannerImages} />
       <section className="section section__about">
         <div className="section__container">
-          <h2 className="section__title">Somos a BeCapital Research</h2>
+          <h2 className="section__title section__title_mod1">Somos a BeCapital Research</h2>
           <p className="section__text">Se você <strong>investe ou quer investir</strong> seu dinheiro, por que fazer isso sozinho? A BeCapital Research é uma Casa de Análise onde são produzidas recomendações de investimentos. Dedicamos nossos dias a ler, interpretar e analisar a economia e as empresas. <strong>Nosso objetivo é te ajudar a transformar ideias em dinheiro.</strong></p>
+          <ul className="section__about__items">
+            <li className="section__about__item">
+              <Image src={iconListCheck} alt="list icon" width={36} height={36}/>
+              <h3 className="section__about__title">Relatório de Recomendações</h3>
+            </li>
+            <li className="section__about__item">
+              <Image src={iconListCheck} alt="list icon" width={36} height={36}/>
+              <h3 className="section__about__title">Material Didático</h3>
+            </li>
+            <li className="section__about__item">
+              <Image src={iconListCheck} alt="list icon" width={36} height={36}/>
+              <h3 className="section__about__title">Grupo exclusivo no Telegram</h3>
+            </li>
+            <li className="section__about__item">
+              <Image src={iconListCheck} alt="list icon" width={36} height={36}/>
+              <h3 className="section__about__title">Live exclusiva de dúvidas</h3>
+            </li>
+            <li className="section__about__item">
+              <Image src={iconListCheck} alt="list icon" width={36} height={36}/>
+              <h3 className="section__about__title">Live com convidados</h3>
+            </li>
+            <li className="section__about__item">
+              <Image src={iconListCheck} alt="list icon" width={36} height={36}/>
+              <h3 className="section__about__title">Garantia de satisfação</h3>
+            </li>
+          </ul>
         </div>
       </section>
       <SectionInvestorProfile/>

@@ -26,7 +26,7 @@ export default function SectionInvestorProfile() {
     <section className={`section ${style.section__investorProfile}`}>
       <div className={style.section__container}>
         <h2 className={style.section__title}>Quem é você nos investimentos?</h2>
-
+        <p className={style.section__subtitle}>A maneira como você lida com risco e dinheiro define o seu perfil comportamental. Saber quem você é alinha expectativa X resultado em cada carteira escolhida.</p>
         <div className={style.investorProfile__items}>
           {profiles.map(({
             title,

@@ -1,0 +1,23 @@
+
+@include notebook {
+  .bannerWithSlide__section {
+    margin-top: 36px;
+  }
+  .bannerWithSlide__container {
+
+    .bannerWithSlide__container_swiper {
+      max-width: 1290px;
+      position: relative;
+      margin: 0 auto;
+      .bannerWithSlide__swiper {
+        max-width: 1166px;
+        position: initial;
+        margin: 0 auto;
+      }
+    }
+    .bannerWithSlide__image {
+      border-radius: 63px;
+    }
+  }
+
+}

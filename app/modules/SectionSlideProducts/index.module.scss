@@ -16,9 +16,16 @@
 @include tablet {
   .slideProducts__section {
     .slideProducts__container {
-      .slideProducts__swiper {
-        max-width: 924px;
+      .slideProducts__container_swiper {
+        position: relative;
+        max-width: 1226px;
+        margin: 0 auto;
       }
+      .slideProducts__swiper {
+        max-width: 926px;
+        position: initial;
+      }
+      
       .slideProducts__title {
         font-size: 36px;
         margin-bottom: 12px;

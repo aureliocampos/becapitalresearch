@@ -1,2 +1,44 @@
 @import "./partials/partials";
 @import "./pages/home";
+
+
+.swiper-button-prev {
+  background-image: url("../media/images/arrow-left.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 50px !important;
+  height: 50px !important;
+  left: -10px !important;
+  &:after {
+    display: none;
+  }
+}
+.swiper-button-next {
+  background-image: url("../media/images/arrow-right.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 50px !important;
+  height: 50px !important;
+  right: -10px !important;
+  &::after {
+    display: none;
+  }
+}
+
+@include notebook {
+  .swiper-button-prev {
+    width: 100px !important;
+    height: 100px !important;
+    left: 10px !important;
+  }
+  .swiper-button-next {
+    width: 100px !important;
+    height: 100px !important;
+    right: 10px !important;
+    &::after {
+      display: none;
+    }
+  }
+}

@@ -11,6 +11,19 @@
     margin-bottom: 1.75rem;
     @include tablet {
       font-size: 2.875em;
+    
+    }
+  }
+  .section__subtitle {
+    display: none;
+    @include notebook {
+      display: block;
+      max-width: 848px;
+      margin: 0 auto;
+      font: 400 1.5em $primary-font;
+      line-height: 149.19%;
+      text-align: center;
+      color: #646464;
       margin-bottom: 3.875rem;
     }
   }

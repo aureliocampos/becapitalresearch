@@ -1,0 +1,48 @@
+.CardMarketIndicator__container {
+  width: 112px;
+  height: 85px;
+  background: #FFFFFF;
+  border: 0.462884px solid rgba(0, 0, 0, 0.15);
+  box-sizing: border-box;
+  border-radius: 20.8298px;
+  padding: 5px;
+  .CardMarketIndicator__title {
+    font: 400 14px $primary-font;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: $darkest;
+
+  }
+  .CardMarketIndicator__price{
+    font: 700 28px $primary-font;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: -0.045em;
+    text-transform: uppercase;
+    color: #8B8B8B;
+    margin-top: 5px;
+    span {
+      font-size: 12px;
+    }
+  }
+  .CardMarketIndicator__percent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font: 300 15px $primary-font;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+
+    
+    &[data-indicator="positive"] {
+      color: #00DC9F;
+    }
+    &[data-indicator="negative"] {
+      color: #FA5252;
+    }
+  }
+}

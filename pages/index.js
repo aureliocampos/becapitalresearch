@@ -8,6 +8,10 @@ import SectionSlideProducts from "../app/modules/SectionSlideProducts";
 import BannerHomeImage from "../media/images/banner-swing-trade.jpg";
 import swingTrade from "../media/images/carteira-mensal.png"
 import iconListCheck from "../media/images/icon-list-check.png";
+import CapaBlogPost from "../media/images/capa-ativos.jpg";
+
+import CardPostSimple from "../app/components/CardPostSimple";
+import CardMarketIndicator from "../app/components/CardMarketIndicator";
 
 export default function Index() {
 
@@ -87,6 +91,30 @@ export default function Index() {
       </section>
       <SectionInvestorProfile/>
       <SectionSlideProducts productsForSlides={productsResearch} />
+      <section className="section section__blog-featured">
+        <div className="section__container">
+          <h2 className="section__title">Últimos Artigos</h2>
+          <div className="blog-featured__posts">
+            <CardPostSimple 
+              image={CapaBlogPost}
+              title="Risco sob duas perspectivas"
+              text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed rutrum feugiat elementum. "
+            />
+            
+          </div>
+        </div>
+      </section>
+      <section className="section section__market-indicators">
+        <div className="section__container">
+          <h2 className="section__title">Indicadores do Mercado</h2>
+          <div className="market-indicators__grid">
+            <CardMarketIndicator />
+            <CardMarketIndicator isNegative={true} />
+            <CardMarketIndicator />
+            <CardMarketIndicator isNegative={true} />
+          </div>
+        </div>
+      </section>
     </Layout>
   )
 }

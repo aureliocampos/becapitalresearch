@@ -1,12 +1,6 @@
 .section__about {
   .section__container {
     padding: 2em 1em;
-    .section__title {
-      font: bold 1.4em $primary-font;
-      line-height: 149.19%;
-      text-align: center;
-      color: $darkest;
-    }
     .section__text {
       font: 400 0.75em $secondary-font;
       line-height: 174.6%;
@@ -74,4 +68,25 @@
       }
     }
   }
+}
+
+.section__blog-featured {
+  .section__container {
+    padding: 2em 1em;
+    .section__text {
+      font: 400 0.75em $secondary-font;
+      line-height: 174.6%;
+      text-align: justify;
+      color: $darkest;
+      margin-top: 1rem;
+    }
+  }
+}
+
+.market-indicators__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5em;
+  max-width: 256px;
+  margin: 26px auto;
 }

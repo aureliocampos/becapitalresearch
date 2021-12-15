@@ -1,2 +1,9 @@
 $primary-font   : 'Trasandina';
 $secondary-font  : "Roboto";
+
+.section__title {
+  font: bold 1.4em $primary-font;
+  line-height: 149.19%;
+  text-align: center;
+  color: $darkest;
+}

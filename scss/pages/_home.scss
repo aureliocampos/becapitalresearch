@@ -89,4 +89,9 @@
   gap: 1.5em;
   max-width: 256px;
   margin: 26px auto;
+  @include notebook {
+    display: flex;
+    justify-content: center;
+    max-width: max-content;
+  }
 }

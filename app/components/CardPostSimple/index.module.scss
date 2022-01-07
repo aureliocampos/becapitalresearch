@@ -5,6 +5,7 @@
   align-items: center;
   margin: 1.25em 0;
   @include notebook {
+    max-width: 420px;
     padding: 1em;
     background: $lightest;
     border-radius: 1.875em;
